@@ -5,8 +5,8 @@ FROM "mireiawen/borg-client:${borgbackup_version}"
 ARG borgbackup_version
 
 # Add the labels for the image
-LABEL name="borg-backup"
-LABEL summary="Docker Container for the BorgBackup to be used as backup server"
+LABEL name="borg-client-cron"
+LABEL summary="Docker Container for the BorgBackup to be used as backup client with timed cron jobs"
 LABEL maintainer="Mira 'Mireiawen' Manninen"
 LABEL version="${borgbackup_version}"
 
